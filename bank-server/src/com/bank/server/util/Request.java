@@ -8,7 +8,7 @@ public class Request implements Serializable{
     private long accNo;
     private double amount;
     private long toAccount;
-    private int pin;
+    transient int pin;
     public Request(String operation, long accNo, double amount, long toAccount, int pin){
         this.operation = operation;
         this.accNo =accNo;

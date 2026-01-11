@@ -1,11 +1,11 @@
 package com.bank.server.model;
 import java.io.Serializable;
 public class Account implements Serializable{
-    private static final long serialVersionID = 1L;
+    private static final long serialVersionUID = 1L;
 
     private long accountNumber;
     private String holderName;
-    private int pin;
+    transient int pin;
     private double balance;
 
     public Account(long accountNumber,String holderName,int pin,double balance){
